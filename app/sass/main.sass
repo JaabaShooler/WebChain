@@ -57,7 +57,8 @@ a
 
 .header-animation 
 
-.minor
+.minor-black, .minor-light
+    color: #000
     position: relative
     &:last-child
         margin-right: 0
@@ -94,15 +95,23 @@ a
         transform: rotate(0deg) translateX(50%)
 
 
+.minor-light
+    color: #fff
+    &:hover
+        color: #fff
+    &::after, &::before
+        background: #fff !important
+
 //////////////////////////buttons//////////////////////////////////////
 
 header
     position: fixed
     z-index: 7000
-    background-color: #fff
+    background: linear-gradient(to bottom, #161616, rgba(255,255,255,0))
     width: 100%
     display: flex
     justify-content: center
+    transition: background .3s
     .width-wraper
         width: 87%
         max-height: 70px
@@ -346,21 +355,19 @@ footer
 
 ////////////////////////////////BUTTON//////////////////////////////////////////
 
-// .button 
-// 	float: left
-// 	min-width: 200px
-// 	max-width: 450px
-// 	display: block
-// 	margin: 1em 0 1em 0
-// 	padding: 1em 2em
-// 	border: none
-// 	background: none
-// 	color: inherit
-// 	vertical-align: middle
-// 	position: relative
-// 	z-index: 1
-// 	-webkit-backface-visibility: hidden
-// 	-moz-osx-font-smoothing: grayscale
+.button 
+	float: left
+	display: block
+	margin: 1em 0 1em 0
+	padding: 1em 2em
+	border: none
+	background: none
+	color: inherit
+	vertical-align: middle
+	position: relative
+	z-index: 1
+	-webkit-backface-visibility: hidden
+	-moz-osx-font-smoothing: grayscale
 // .button:focus 
 // 	outline: none
 // .button > span 
@@ -371,136 +378,10 @@ footer
 //     font-weight: 700
 // .button--border-thick
 // 	border: 3px solid
-// .button--pipaluk
-//     width: 10000px
-//     color: #ffffff
-//     padding: 50px 150px
-//     display: flex
-//     justify-content: center
-// .button--pipaluk.button--inverted
-//     color: #2b2b2b
-// .button--pipaluk::before,
-// .button--pipaluk::after
-//     content: ""
-//     border-radius: inherit
-//     position: absolute
-//     top: 0
-//     left: 0
-//     width: 100%
-//     height: 100%
-//     z-index: -1
-//     transition: transform 0.3s, background-color 0.3s
-//     -webkit-transition: -webkit-transform 0.3s, background-color 0.3s
-//     -webkit-transition-timing-function: cubic-bezier(0.25, 0, 0.3, 1)
-//     transition-timing-function: cubic-bezier(0.25, 0, 0.3, 1)
-// .button--pipaluk::before
-//     border: 2px solid #2b2b2b
-// .button--pipaluk.button--inverted::before
-//     border-color: #ffffff
-// .button--pipaluk::after
-//     background: #2b2b2b
-// .button--pipaluk.button--inverted::after
-//     background: #ffffff
-// .button--pipaluk:hover::before
-//     -webkit-transform: scale3d(1, 1, 1)
-//     transform: scale3d(1, 1, 1)
-// .button--pipaluk::before,
-// .button--pipaluk:hover::after
-//     -webkit-transform: scale3d(0.7, 0.7, 1)
-//     transform: scale3d(0.7, 0.7, 1)
-// .button--pipaluk:hover::after
-//     background-color: #1b1b1b
-// .button--pipaluk.button--inverted:hover::after
-//     background-color: #fff
-// //029E99
-// .btn_portf
-//     display: flex
-//     justify-content: center
-//     align-items: center
-//     margin-bottom: 50px
-//     @media screen and (max-width: 1000px)
-//         margin: 0px auto 40px auto
-//     @media screen and (max-width: 500px)
-//         margin: 20px auto 40px 25%
-//     @media screen and (max-width: 400px)
-//         margin: 20px auto 40px 20%
-    
-// .portf_b 
-// 	float: left
-// 	min-width: 100px
-// 	max-width: 250px
-// 	display: block
-// 	margin: 1em 0 1em 0
-// 	padding: 1em 2em
-// 	border: none
-// 	background: none
-// 	color: inherit
-// 	vertical-align: middle
-// 	position: relative
-// 	z-index: 1
-// 	-webkit-backface-visibility: hidden
-// 	-moz-osx-font-smoothing: grayscale
-// .portf_b:focus 
-// 	outline: none
-// .portf_b > span 
-// 	vertical-align: middle
-// .portf_b--round-s
-//     border-radius: 0
-// .portf_b--text-thick
-//     font-weight: 700
-// .portf_b--border-thick
-// 	border: 3px solid
-// .portf_b--pipaluk
-//     width: 10000px
-//     color: #2b2b2b
-//     padding: 25px 50px
-//     display: flex
-//     justify-content: center
-// .portf_b--pipaluk.portf_b--inverted
-//     color: #ffffff
-//     &:hover
-//         color: #2b2b2b
-//         transition: all .5s linear
-// .portf_b--pipaluk::before,
-// .portf_b--pipaluk::after
-//     content: ""
-//     border-radius: inherit
-//     position: absolute
-//     top: 0
-//     left: 0
-//     width: 100%
-//     height: 100%
-//     z-index: -1
-//     transition: transform 0.3s, background-color 0.3s
-//     -webkit-transition: -webkit-transform 0.3s, background-color 0.3s
-//     -webkit-transition-timing-function: cubic-bezier(0.25, 0, 0.3, 1)
-//     transition-timing-function: cubic-bezier(0.25, 0, 0.3, 1)
-// .portf_b--pipaluk::before
-//     border: 2px solid #ffffff
-// .portf_b--pipaluk.portf_b--inverted::before
-//     border-color: #029E99
-// .portf_b--pipaluk::after
-//     background: #2b2b2b
-// .button--pipaluk.portf_b--inverted::after
-//     background: #2b2b2b
-// .portf_b--pipaluk:hover::before
-//     -webkit-transform: scale3d(1, 1, 1)
-//     transform: scale3d(1, 1, 1)
-// .portf_b--pipaluk::before,
-// .portf_b--pipaluk:hover::after
-//     -webkit-transform: scale3d(0.7, 0.7, 1)
-//     transform: scale3d(0.7, 0.7, 1)
-// .portf_b--pipaluk:hover::after
-//     background-color: #ffffff
-// .portf_b--pipaluk.portf_b--inverted:hover::after
-//     background-color: #029E99
-//     color: #2b2b2b 
-
-
 
 .button--ujarak 
 	transition: border-color 0.4s, color 0.4s
-
+    
 
 .button--ujarak::before
     content: ''
@@ -509,7 +390,8 @@ footer
     left: 0
     width: 100%
     height: 100%
-    background: #000
+    background: #fff
+    color: #fff
     z-index: -1
     opacity: 0
     -webkit-transform: scale3d(0.7, 1, 1)
@@ -523,7 +405,7 @@ footer
 	border-radius: 2px
 
 .button--ujarak.button--inverted::before 
-	background: #000
+	background: #fff
 
 .button--ujarak
 
@@ -533,19 +415,21 @@ footer
 	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
 
 .button--ujarak:hover 
-	color: #fff
-	border-color: #000
+	color: #000  !important
+	border-color: #fff
 
 .button--ujarak.button--inverted:hover 
-	color: #000000
-	border-color: #fff
+	color: #000 !important
+	border-color: #fff //
 
 .button--ujarak:hover::before 
 	opacity: 1
 	-webkit-transform: translate3d(0, 0, 0)
 	transform: translate3d(0, 0, 0)
 
-.colors
+.button--ujarak-light
+    color: #fff !important
+
 
 
 @media screen and ( max-width: 690px )
