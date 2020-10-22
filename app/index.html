@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    
+
     <header>
         <div class="width-wraper">
             <img src="img/_src/logo.png" alt="">
@@ -25,7 +25,8 @@
                     <a class="standart minor" href="#">Главная</a>
                     <a class="standart minor" href="#">О нас</a>
                     <a class="standart minor" href="#">Проекты</a>
-                    <a class="standart button button--ujarak button--border-thin button--text-thick" href="#">Заказать</a>
+                    <a class="standart button button--ujarak button--border-thin button--text-thick"
+                        href="#">Заказать</a>
                 </ul>
             </nav>
             <a id="menu_burger" class="menu_burger">
@@ -35,10 +36,12 @@
                 <a class="nav-menu-items-b" href="">Главная</a>
                 <a class="nav-menu-items-b" href="">О нас</a>
                 <a class="nav-menu-items-b" href="">Проекты</a>
+
                 <a class="nav-menu-items-b last-nav-b" href="">
                     Заказать
                     <div class="divider-item-b"><span class="divider-line-b"></span></div>
                 </a>
+
                 <div class="language_block_b">
                     <div class="language_b">
                         <p class="name_language">Language</p>
@@ -67,25 +70,129 @@
             <div class="block_num">
                 <ul>
                     <li>
-                        <div class="numer"><span class="nam_line" id="nam_1"></span><a href="#block1" class="num">01</a></div>
+                        <div class="numer"><span class="nam_line" id="nam_1"></span><a href="#block1" class="num">01</a>
+                        </div>
                     </li>
                     <li>
-                        <div class="numer"><span class="nam_line" id="nam_2"></span><a href="#block2" class="num">02</a></div>
+                        <div class="numer"><span class="nam_line" id="nam_2"></span><a href="#block2" class="num">02</a>
+                        </div>
                     </li>
                     <li>
-                        <div class="numer"><span class="nam_line" id="nam_3"></span><a href="#block3" class="num">03</a></div>
+                        <div class="numer"><span class="nam_line" id="nam_3"></span><a href="#block3" class="num">03</a>
+                        </div>
                     </li>
                     <li>
-                        <div class="numer"><span class="nam_line" id="nam_4"></span><a href="#block4" class="num">04</a></div>
+                        <div class="numer"><span class="nam_line" id="nam_4"></span><a href="#block4" class="num">04</a>
+                        </div>
                     </li>
                 </ul>
             </div>
             <div class="main-inner" id="particles-js">
                 <div class="inner-text">
-                    <h3>WEBCHAIN</h3>
-                    <h4>РАЗРАБОТКА САЙТОВ</h4>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur</p>
-                    <a href="#">ЗАКАЗАТЬ</a>
+                    <h3 class="webchain">
+                        WEBCHAIN
+                    </h3>
+
+
+
+
+
+
+                    <div class="develop-webchain">
+
+                        <div class="develop-left">
+                            <div class="list-dev">
+                                <ul class="lists">
+                                    <li class="dev-1 ">
+                                        Разработка сайтов
+                                    </li>
+                                    <li class="dev-2">
+                                        Продвижение
+                                    </li>
+                                    <li class="dev-3">
+                                        Оптимизация
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <span class="develop-line"></span>
+
+                        <div class="develop-right">
+                            <div class="info-dev-1 ">
+                                1Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo impedit omnis beatae
+                                eius magni molestiae, officia unde obcaecati nemo voluptatibus natus consequatur atque
+                                enim at? Esse ipsa consectetur saepe illo.
+                            </div>
+                            <div class="info-dev-2 ">
+                                2Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo impedit omnis beatae
+                                eius magni molestiae, officia unde obcaecati nemo voluptatibus natus consequatur atque
+                                enim at? Esse ipsa consectetur saepe illo.
+                            </div>
+                            <div class="info-dev-3">
+                                3Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo impedit omnis beatae
+                                eius magni molestiae, officia unde obcaecati nemo voluptatibus natus consequatur atque
+                                enim at? Esse ipsa consectetur saepe illo.
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <script>
+                        function setDevs() {
+                            document.querySelector(".list-dev").classList.add("list-active")
+                            document.querySelector(".dev-1").classList.add("devop-active")
+                            document.querySelector(".info-dev-1").classList.add("info-dev-active")
+                        }
+                        setTimeout(setDevs, 2300)
+
+                        let interval = setTimeout(function () {
+                            document.querySelector(".btn-zakaz").classList.add("btn-load")
+                        }, 3000);
+
+                        document.querySelector(".dev-1").addEventListener("click", function () {
+                            document.querySelector(".dev-1").classList.add("devop-active")
+                            document.querySelector(".dev-2").classList.remove("devop-active")
+                            document.querySelector(".dev-3").classList.remove("devop-active")
+
+
+                            document.querySelector(".info-dev-1").classList.add("info-dev-active")
+                            document.querySelector(".info-dev-2").classList.remove("info-dev-active")
+                            document.querySelector(".info-dev-3").classList.remove("info-dev-active")
+
+                        });
+
+                        document.querySelector(".dev-2").addEventListener("click", function () {
+                            document.querySelector(".dev-2").classList.add("devop-active")
+                            document.querySelector(".dev-1").classList.remove("devop-active")
+                            document.querySelector(".dev-3").classList.remove("devop-active")
+
+
+                            document.querySelector(".info-dev-2").classList.add("info-dev-active")
+                            document.querySelector(".info-dev-1").classList.remove("info-dev-active")
+                            document.querySelector(".info-dev-3").classList.remove("info-dev-active")
+                        });
+
+                        document.querySelector(".dev-3").addEventListener("click", function () {
+                            document.querySelector(".dev-3").classList.add("devop-active")
+                            document.querySelector(".dev-2").classList.remove("devop-active")
+                            document.querySelector(".dev-1").classList.remove("devop-active")
+
+
+                            document.querySelector(".info-dev-3").classList.add("info-dev-active")
+                            document.querySelector(".info-dev-2").classList.remove("info-dev-active")
+                            document.querySelector(".info-dev-1").classList.remove("info-dev-active")
+                        });
+                    </script>
+
+
+
+
+
+
+                    <a class="btn-zakaz" href="#">
+                        <p>Заказать</p>
+                    </a>
                 </div>
             </div>
             <div class="language_block">
@@ -116,9 +223,14 @@
                 </div>
                 <h4 class="info_sl1" id="scrol_lin1">Lorem ipsum dolor </h4>
                 <div class="div_info_line"><span class="info_line"></span></div>
-                <p class="info_txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                    no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
-                <p class="info_txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo</p>
+                <p class="info_txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                    et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                    no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                    sadipscing elitr</p>
+                <p class="info_txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                    et justo duo</p>
                 <a href="#" class="contnt_info_slk">Lorem ipsum dolor </a>
             </div>
             <div class="slader_inf">
@@ -137,8 +249,14 @@
                     </li>
                 </ul>
                 <span>
-                    <div class="button_sld"  id="prev"><div class="str_dl"><div class="strl"></div></div></div>
-                    <div class="button_sld"  id="next"><div class="strr"></div></div>
+                    <div class="button_sld" id="prev">
+                        <div class="str_dl">
+                            <div class="strl"></div>
+                        </div>
+                    </div>
+                    <div class="button_sld" id="next">
+                        <div class="strr"></div>
+                    </div>
                 </span>
             </div>
         </div>
@@ -153,7 +271,9 @@
                     <h4 class="services_sl1" id="scrol_lin2">Lorem ipsum dolor sit amet, consetetur </h4>
                     <div class="div_info_line"><span class="services_line"></span></div>
                 </div>
-                <p class="services_txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo </p>
+                <p class="services_txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                    et justo duo </p>
                 <div class="strlk">
                     <a href="#" class="strelka">PWA<div class="str"></div></a>
                     <a href="#" class="strelka">Медицина<div class="str"></div></a>
@@ -162,23 +282,35 @@
             <div class="services_rozrab">
                 <div class="block_rozrab">
                     <div class="rozrab"><span class="serv_npl"></span>Разработка сайтов</div>
-                    <p class="rozrab_txt" style="display: none;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+                    <p class="rozrab_txt" style="display: none;">Lorem ipsum dolor sit amet, consetetur sadipscing
+                        elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                        sadipscing elitr</p>
                 </div>
                 <div class="block_rozrab">
                     <div class="rozrab"><span class="serv_npl"></span>Разработка сайтов</div>
-                    <p class="rozrab_txt" style="display: none;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+                    <p class="rozrab_txt" style="display: none;">Lorem ipsum dolor sit amet, consetetur sadipscing
+                        elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                        sadipscing elitr</p>
                 </div>
                 <div class="block_rozrab">
                     <div class="rozrab"><span class="serv_npl"></span>Разработка сайтов</div>
-                    <p class="rozrab_txt" style="display: none;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+                    <p class="rozrab_txt" style="display: none;">Lorem ipsum dolor sit amet, consetetur sadipscing
+                        elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                        sadipscing elitr</p>
                 </div>
                 <div class="block_rozrab">
                     <div class="rozrab"><span class="serv_npl"></span>Разработка сайтов</div>
-                    <p class="rozrab_txt" style="display: none;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+                    <p class="rozrab_txt" style="display: none;">Lorem ipsum dolor sit amet, consetetur sadipscing
+                        elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                        sadipscing elitr</p>
                 </div>
             </div>
         </div>
@@ -197,7 +329,9 @@
                         </div>
                     </div>
                     <h4 class="portf_2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h4>
-                    <p class="portf_txt1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet</p>
+                    <p class="portf_txt1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                        et accusam et justo duo dolores et ea rebum. Stet</p>
                     <p class="portf_info" id="portf_info_id">Lorem ipsum dolor </p>
                     <a href="#" class="portf_info" id="portf_info_id2">Lorem ipsum dolor </a>
                 </div>
@@ -209,7 +343,9 @@
                         </div>
                     </div>
                     <h4 class="portf_2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h4>
-                    <p class="portf_txt1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet</p>
+                    <p class="portf_txt1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                        et accusam et justo duo dolores et ea rebum. Stet</p>
                     <p class="portf_info" id="portf_info_id">Lorem ipsum dolor </p>
                     <a href="#" class="portf_info" id="portf_info_id2">Lorem ipsum dolor </a>
                 </div>
@@ -221,13 +357,16 @@
                         </div>
                     </div>
                     <h4 class="portf_2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h4>
-                    <p class="portf_txt1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet</p>
+                    <p class="portf_txt1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                        et accusam et justo duo dolores et ea rebum. Stet</p>
                     <p class="portf_info" id="portf_info_id">Lorem ipsum dolor </p>
                     <a href="#" class="portf_info" id="portf_info_id2">Lorem ipsum dolor </a>
                 </div>
             </div>
             <div class="btn_portf">
-                <button class="portf_b portf_b--pipaluk portf_b--inverted button--round-s button--text-thick" href="#">Loerm ipsum dolor</button>
+                <button class="portf_b portf_b--pipaluk portf_b--inverted button--round-s button--text-thick"
+                    href="#">Loerm ipsum dolor</button>
             </div>
         </div>
         <div class="customers">
@@ -260,7 +399,8 @@
                 </div>
             </div>
             <div class="btn_footer">
-                <button class="button button--pipaluk button--inverted  button--round-s button--text-thick" href="#">ОТПРАВИТЬ ЗАЯВКУ</button>
+                <button class="button button--pipaluk button--inverted  button--round-s button--text-thick"
+                    href="#">ОТПРАВИТЬ ЗАЯВКУ</button>
             </div>
             <div class="text_ftr">
                 <div class="contact_footer">
@@ -284,22 +424,167 @@
                 </div>
             </div>
             <div class="additional">
-                <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</h5>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                    no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+                <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna</h5>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                    et ea rebum. Stet clita kasd gubergren,
+                    no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                    sadipscing elitr</p>
             </div>
         </div>
     </footer>
+    <script>
+        function writeTextByJS() {
 
-    <script src="js/lib/particles.min.js"></script>
-    <script src="js/lib/app.js"></script>
-    <script src="js/lib/lib/stats.js"></script>
+            let txt = document.querySelector(".webchain").innerText;
+            let temp, i = 0;
+            var ele = document.querySelector(".webchain");
+            ele.innerText = "";
+
+            let interval = setInterval(function () {
+                temp = ele.innerText;
+                temp = temp + txt[i];
+                ele.innerText = temp;
+                if (i === 7) clearInterval(interval);
+                i++;
+            }, 200);
+
+
+        };
+        writeTextByJS();
+    </script>
+
+    <script src="js/scripts.min.js"></script>
+
+
 
     <script src="js/jquery.min.js"></script>
-    <script src="js/_custom.js"></script>
-    <script src="js/BlocksByID.js"></script>
-    <script src="js/jquery.waypoints.js"></script>
 
+
+
+    <script>
+        particlesJS('particles-js',
+
+            {
+                "particles": {
+                    "number": {
+                        "value": 80,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#ffffff"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#1A1A1A"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        },
+                        "image": {
+                            "src": "img/github.svg",
+                            "width": 100,
+                            "height": 100
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": false,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 5,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#ffffff",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 4,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "grab"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 200,
+                            "line_linked": {
+                                "opacity": 0.5
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true,
+                "config_demo": {
+                    "hide_card": false,
+                    "background_color": "#b61924",
+                    "background_image": "",
+                    "background_position": "50% 50%",
+                    "background_repeat": "no-repeat",
+                    "background_size": "cover"
+                }
+            }
+
+        );
+    </script>
 </body>
 
 

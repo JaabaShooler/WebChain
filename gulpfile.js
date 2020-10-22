@@ -66,6 +66,7 @@ gulp.task('scripts', function() {
     return gulp.src([
 
             'node_modules/aos/dist/aos.js',
+            'node_modules/particles.js/particles.js',
             'app/js/_lazy.js', // JS library plug-in example
             'app/js/_custom.js', // Custom scripts. Always at the end
         ])
