@@ -102,6 +102,56 @@ a
     &::after, &::before
         background: #fff !important
 
+
+
+.button--ujarak 
+	transition: border-color 0.4s, color 0.4s
+    
+
+.button--ujarak::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: #fff
+    color: #fff
+    border-color: #fff
+    z-index: -1
+    opacity: 0
+    transform: scale3d(0.7, 1, 1)
+    transition: transform 0.4s, opacity 0.4s
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
+
+.button--ujarak.button--round-s::before 
+	border-radius: 2px
+
+.button--ujarak.button--inverted::before 
+	background: #fff
+
+
+.button--ujarak,
+.button--ujarak::before 
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
+
+.button--ujarak:hover 
+	color: #000  !important
+	border-color: #fff 
+
+.button--ujarak.button--inverted:hover 
+	color: #000 !important
+	border-color: #fff //
+
+.button--ujarak:hover::before 
+	opacity: 1
+	transform: translate3d(0, 0, 0)
+
+.button--ujarak-light
+    color: #fff !important
+
+
+
 //////////////////////////buttons//////////////////////////////////////
 
 header
@@ -378,58 +428,6 @@ footer
 //     font-weight: 700
 // .button--border-thick
 // 	border: 3px solid
-
-.button--ujarak 
-	transition: border-color 0.4s, color 0.4s
-    
-
-.button--ujarak::before
-    content: ''
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-    background: #fff
-    color: #fff
-    z-index: -1
-    opacity: 0
-    -webkit-transform: scale3d(0.7, 1, 1)
-    transform: scale3d(0.7, 1, 1)
-    -webkit-transition: -webkit-transform 0.4s, opacity 0.4s
-    transition: transform 0.4s, opacity 0.4s
-    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
-    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
-
-.button--ujarak.button--round-s::before 
-	border-radius: 2px
-
-.button--ujarak.button--inverted::before 
-	background: #fff
-
-.button--ujarak
-
-.button--ujarak,
-.button--ujarak::before 
-	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
-	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
-
-.button--ujarak:hover 
-	color: #000  !important
-	border-color: #fff
-
-.button--ujarak.button--inverted:hover 
-	color: #000 !important
-	border-color: #fff //
-
-.button--ujarak:hover::before 
-	opacity: 1
-	-webkit-transform: translate3d(0, 0, 0)
-	transform: translate3d(0, 0, 0)
-
-.button--ujarak-light
-    color: #fff !important
-
 
 
 @media screen and ( max-width: 690px )
