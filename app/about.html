@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>OptimizedHTML 5</title>
+    <meta name="description" content="Startup HTML template OptimizedHTML 5">
+
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png">
+    <meta property="og:image" content="">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+
+<body>
+    <script src="js/jquery.min.js"></script>
+    <header>
+        <div class="width-wraper">
+            <img src="img/_src/logo.png" alt="">
+            <nav class="nav-menu ">
+                <ul class="header-animation">
+                    <a class="standart minor" href="#">Главная</a>
+                    <a class="standart minor" href="#">О нас</a>
+                    <a class="standart minor" href="#">Проекты</a>
+                    <a class="standart button button--ujarak button--border-thin button--text-thick" href="#">Заказать</a>
+                </ul>
+            </nav>
+            <a id="menu_burger" class="menu_burger">
+                <img src="img/burg_1.png" onclick="imgchange()" id="myimg" />
+            </a>
+            <div class="nav-menu_b" style="display: none">
+                <a class="nav-menu-items-b" href="">Главная</a>
+                <a class="nav-menu-items-b" href="">О нас</a>
+                <a class="nav-menu-items-b" href="">Проекты</a>
+                <a class="nav-menu-items-b last-nav-b" href="">
+                    Заказать
+                    <div class="divider-item-b"><span class="divider-line-b"></span></div>
+                </a>
+                <div class="language_block_b">
+                    <div class="language_b">
+                        <p class="name_language">Language</p>
+                        <ul>
+                            <li><a href="#" class="language_s">UA</a></li>
+                            <li><a href="#" class="language_s">EN</a></li>
+                            <li><a href="#" class="language_s">RU</a></li>
+                        </ul>
+                    </div>
+                    <div class="social_b">
+                        <p class="name_language">Social</p>
+                        <ul>
+                            <li><a href="#" class="language_s">TG</a></li>
+                            <li><a href="#" class="language_s">TW</a></li>
+                            <li><a href="#" class="language_s">IG</a></li>
+                            <li><a href="#" class="language_s">FB</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="div_scr"></div>
+        <div class="content_gl">
+            <div class="language_block">
+                <div class="language">
+                    <ul>
+                        <li><a href="#" class="language_s" id="ua">UA</a></li>
+                        <li><a href="#" class="language_s" id="en">EN</a></li>
+                        <li><a href="#" class="language_s" id="ru">RU</a></li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <ul>
+                        <li><a href="#" class="language_s" id="tg">TG</a></li>
+                        <li><a href="#" class="language_s" id="tw">TW</a></li>
+                        <li><a href="#" class="language_s" id="ig">IG</a></li>
+                        <li><a href="#" class="language_s" id="fb">FB</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="info_slaider">
+            <div class="pustoi_block" id="block1"></div>
+            <div class="contnt_info">
+                <div class="block_name">
+                    <div class="div_span"><span class="move_line" id="bl_lin_1"></span></div>
+                    <h2 class="block_name_f" id="bl_nam_1">Who we are</h2>
+                </div>
+                <h4 class="info_sl1">Lorem ipsum dolor </h4>
+                <div class="div_info_line"><span class="info_line"></span></div>
+                <p class="info_txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                    et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                    no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                    sadipscing elitr</p>
+                <p class="info_txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                    et justo duo</p>
+                <a href="#" class="contnt_info_slk">Lorem ipsum dolor </a>
+            </div>
+            <div class="slader_inf">
+                <ul class="carousel">
+                    <li class="items main-pos" id="1">
+                        <img src="img/sld1.png">
+                    </li>
+                    <li class="items right-pos" id="2">
+                        <img src="img/sld2.png">
+                    </li>
+                    <li class="items back-pos" id="3">
+                        <img src="img/sld1.png">
+                    </li>
+                    <li class="items left-pos" id="4">
+                        <img src="img/sld2.png">
+                    </li>
+                </ul>
+                <span>
+                    <div class="button_sld" id="prev">
+                        <div class="str_dl">
+                            <div class="strl"></div>
+                        </div>
+                    </div>
+                    <div class="button_sld" id="next">
+                        <div class="strr"></div>
+                    </div>
+                </span>
+            </div>
+        </div>
+
+        <div class="team_block">
+            <div class="pustoi_block" id="block2"></div>
+            <div class="block_name">
+                <div class="div_span"><span class="move_line" id="bl_lin_2"></span></div>
+                <h2 class="block_name_f" id="bl_nam_2">Who we are</h2>
+            </div>
+            <h4 class="services_sl1">Lorem ipsum dolor </h4>
+            <div class="div_info_line"><span class="services_line"></span></div>
+            <p class="service_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                sadipscing elitr</p>
+            <div class="team">
+                <div class="members">
+                    <img src="img/images/members/fman.png" alt="">
+                    <h5>Ivan Ivan</h5>
+                    <p>Developer</p>
+                </div>
+                <div class="grayline"></div>
+                <div class="members">
+                    <img src="img/images/members/sman.png" alt="">
+                    <h5>Ivan Ivan</h5>
+                    <p>Developer</p>
+                </div>
+                <div class="grayline"></div>
+                <div class="members">
+                    <img src="img/images/members/tman.png" alt="">
+                    <h5>Ivan Ivan</h5>
+                    <p>Developer</p>
+                </div>
+                <div class="grayline"></div>
+                <div class="members">
+                    <img src="img/images/members/fwoman.png" alt="">
+                    <h5>Ivan Ivan</h5>
+                    <p>Developer</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="statistic">
+            <div class="pustoi_block" id="block3"></div>
+            <div class="block_name">
+                <div class="div_span"><span class="move_line" id="bl_lin_3"></span></div>
+                <h2 class="block_name_f" id="bl_nam_3">Who we are</h2>
+            </div>
+            <h4 class="about_3">Lorem ipsum dolor </h4>
+            <div class="div_info_line"><span class="about_3_lin"></span></div>
+            <p class="service_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                sadipscing elitr</p>
+
+
+
+
+
+            <div class="stata-about">
+
+                <div>
+                    <p class="stat-number number1" data-max="11">0</p>
+                    <p class="stat-text text1">Lorem ipsum dolor sit amet, consetetur </p>
+                </div>
+
+                <div>
+                    <p class="stat-number number2" data-max="56">0</p>
+                    <p class="stat-text text2">Lorem ipsum dolor sit amet, consetetur </p>
+                </div>
+
+                <div>
+                    <p class="stat-number number3" data-max="115">0</p>
+                    <p class="stat-text text3">Lorem ipsum dolor sit amet, consetetur </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <div class="customers">
+        <div class="pustoi_block" id="block4"></div>
+        <div class="block_name">
+            <div class="div_span"><span class="move_line" id="bl_lin_4"></span></div>
+            <h2 class="block_name_f" id="bl_nam_4">Our customers</h2>
+        </div>
+        <div class="customers_block">
+            <div class="custo_block"><img src="img/custo.png" class="customers_img"></div>
+            <div class="custo_block"><img src="img/custo.png" class="customers_img"></div>
+            <div class="custo_block"><img src="img/custo.png" class="customers_img"></div>
+            <div class="custo_block"><img src="img/custo.png" class="customers_img"></div>
+            <div class="custo_block"><img src="img/custo.png" class="customers_img"></div>
+            <div class="custo_block"><img src="img/custo.png" class="customers_img"></div>
+            <div class="custo_block"><img src="img/custo.png" class="customers_img"></div>
+            <div class="custo_block"><img src="img/custo.png" class="customers_img"></div>
+        </div>
+    </div>
+    </div>
+    <footer>
+
+        <div class="wrap_footer">
+            <div class="info_footer">
+                <div class="text_footer">
+                    <h2>Lorem ipsum dolor sit amet, consetetur</h2>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+                    <a href="#">Медицина</a>
+                    <a href="#">Медицина</a>
+                </div>
+            </div>
+            <div class="btn_footer">
+                <button class="button button--pipaluk button--inverted  button--round-s button--text-thick"
+                    href="#">ОТПРАВИТЬ ЗАЯВКУ</button>
+                <button class="button button--pipaluk button--inverted  button--round-s button--text-thick"
+                    href="#">ОТПРАВИТЬ ЗАЯВКУ</button>
+            </div>
+            <div class="text_ftr">
+                <div class="contact_footer">
+                    <div class="content_ftr">
+                        <h5>Email</h5>
+                        <a href="#">Loremipsumdolor@webchain.com</a>
+                    </div>
+                    <div class="content_ftr">
+                        <h5>Phone</h5>
+                        <p> +380-888-88-88 <br>(бесплатно для Украины)</p>
+                    </div>
+                    <div class="content_ftr">
+                        <h5>Projects</h5>
+                        <a href="#">Loremipsumdolor@webchain.com</a>
+                        <p> +380-888-88-88 </p>
+                    </div>
+                    <div class="content_ftr">
+                        <h5>Visit</h5>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="additional">
+                <h5>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna</h5>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                    et ea rebum. Stet clita kasd gubergren,
+                    no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                    sadipscing elitr</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script src="js/jquery.waypoints.js"></script>
+</body>
+<foot>
+</foot>
+
+</html>
+
+</html>
