@@ -1,2 +1,4 @@
 /node_modules
 node_modules
+/app/css/style.min.css
+/app/js/scripts.min.js
