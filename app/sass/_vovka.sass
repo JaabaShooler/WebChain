@@ -5,7 +5,13 @@
     @media screen and ( max-width: 765px )
         width: 85%
 .project-content
-    margin-top: 100px
+    margin-top: -1px
+    
+.project-head
+    #particles-js
+        position: relative
+        max-height: 300px
+        padding-top: 80px
 .projects-items
     display: flex
     flex-wrap: wrap
@@ -14,7 +20,25 @@
         flex-direction: column
         .project-item
             width: auto
-
+.project-part
+    width: 100%
+    top: 20%
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    p
+        width: 300px
+        color: #fff
+    h1
+        font-size: 3rem
+        color: #fff
+    span
+        margin: 0 20px
+        display: block
+        height: 200px
+        width: 3px
+        background: #fff
 .project-item
     margin-top: 20px
     width: calc( 50% -  15px)
