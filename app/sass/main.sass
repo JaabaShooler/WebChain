@@ -43,11 +43,14 @@ a
         transition: all 0.2s linear
         // color: #029E99
         color: #000
-
+.btn-portfolio
+    border: 2px solid #000
+    
 .contnt_info_slk
     position: relative !important
     font-size: 16px
     font-weight: 700
+    border-left: 3px solid #000
     margin: 20px 0 20px 210px
     @media screen and (max-width: 1600px)
         margin-left: 100px
@@ -65,7 +68,7 @@ a
     display: block
 .contnt_info_slk::after
     top: 0
-    left: 0
+    left: -1px
     width: 2px
     height: 2px
     background: $main-color
@@ -76,7 +79,7 @@ a
 .contnt_info_slk::before 
     position: absolute
     top: 0
-    left: 0
+    left: -3px
     width: 100%
     height: 2px
     background: $main-color
@@ -104,7 +107,6 @@ a
 .button.standart
     margin: 0 5px !important
 
-.header-animation 
 
 .minor-black, .minor-light
     color: #000
@@ -153,6 +155,7 @@ a
 
 .btn_portf
     text-align: center
+    margin-top: 100px
 
 .button--ujarak 
 	transition: border-color 0.4s, color 0.4s
@@ -207,7 +210,7 @@ a
 
 
 .button--ujarak-dark
-    padding: 10px 20px
+    padding: 15px 25px
     color: #000 !important
     font-size: 16px
     font-weight: 700
@@ -216,6 +219,7 @@ a
     content: ''
     position: absolute
     top: 0
+    bottom: 0
     left: 0
     width: 100%
     height: 100%
@@ -242,6 +246,7 @@ header
     z-index: 7000
     background: linear-gradient(to bottom, #161616, rgba(255,255,255,0))
     width: 100%
+    
     display: flex
     justify-content: center
     transition: background .3s
@@ -337,7 +342,8 @@ header
 
 
 
-
+.logo
+    padding: 0 10px
 
 .hover-line
     width: 110px!important
@@ -430,6 +436,8 @@ footer
     display: flex
     flex-direction: column
     a
+        width: 150px!important
+        height: 50px!important
         text-align: center
         position: relative
         padding: 30px
@@ -608,6 +616,7 @@ footer
 .content_gl 
     display: flex
     justify-content: space-between
+    min-height: 100vh
 .div_scr
     padding-top: 70px
 .block_num 
@@ -736,6 +745,8 @@ footer
     font-family: Roboto
     margin: 15px
     color: #707070
+    &:hover
+        color: #029E99!important
     @media screen and (max-width: 1000px)
         margin: 10px
 .language_b
@@ -1106,7 +1117,7 @@ footer
         width: 80%
 
 .portfolio
-    margin-right: 114px
+    margin: 100px 0
     display: flex
     justify-content: center
     flex-direction: column 

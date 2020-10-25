@@ -12,7 +12,7 @@
 	text-align: center
 
 
-.grid figure 
+.grid a 
     position: relative
     float: left
     overflow: hidden
@@ -46,9 +46,16 @@
 
 
 
-
-.grid figure figcaption,
-.grid figure figcaption > a 
+.custo_block 
+    &:hover
+        img
+            filter: grayscale(0%)
+    img
+        
+        filter: grayscale(100%)
+        
+.grid a figcaption,
+.grid a figcaption > a 
 	position: absolute
 	top: 0
 	left: 0
@@ -58,7 +65,7 @@
 
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
-.grid figure figcaption > a 
+.grid a figcaption > a 
 	z-index: 1000
 	text-indent: 200%
 	white-space: nowrap
@@ -66,39 +73,40 @@
 	opacity: 0
 
 
-.grid figure h2 
+.grid a h2 
 	word-spacing: -0.15em
 	font-weight: 300
 
 
-.grid figure h2 span 
+.grid a h2 span 
 	font-weight: 800
 
 
-.grid figure h2,
-.grid figure p 
+.grid a h2,
+.grid a p 
 	margin: 0
 
 
-.grid figure p 
+.grid a p 
 	letter-spacing: 1px
 	font-size: 68.5%
 
 
 
-figure.effect-apollo 
+a.effect-apollo 
 	background: #e1e1e1
 
 
-figure.effect-apollo img 
+a.effect-apollo img 
 	opacity: 0.95
+    
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s
 	transition: opacity 0.35s, transform 0.35s
 	-webkit-transform: scale3d(1.05,1.05,1)
 	transform: scale3d(1.05,1.05,1)
 
 
-figure.effect-apollo figcaption::before 
+a.effect-apollo figcaption::before 
 	position: absolute
 	top: 0
 	left: 0
@@ -112,7 +120,7 @@ figure.effect-apollo figcaption::before
 	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0)
 
 
-figure.effect-apollo p 
+a.effect-apollo p 
 	position: absolute
 	right: 0
 	bottom: 0
@@ -126,22 +134,22 @@ figure.effect-apollo p
 	transition: opacity 0.35s
 
 
-figure.effect-apollo h2 
+a.effect-apollo h2 
 	text-align: left
 
 
-figure.effect-apollo:hover img 
+a.effect-apollo:hover img 
 	opacity: 0.6
 	-webkit-transform: scale3d(1,1,1)
 	transform: scale3d(1,1,1)
 
 
-figure.effect-apollo:hover figcaption::before 
+a.effect-apollo:hover figcaption::before 
 	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0)
 	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0)
 
 
-figure.effect-apollo:hover p 
+a.effect-apollo:hover p 
 	opacity: 1
 	-webkit-transition-delay: 0.1s
 	transition-delay: 0.1s
@@ -214,7 +222,7 @@ canvas
 .main-inner
     width: 100%
     margin: 0 auto
-    height: 100vh
+    min-height: 100vh
     position: relative
     overflow: hidden
     z-index: 1
@@ -341,13 +349,13 @@ $width_dev: 300px
     background: #fff
 
 .btn-load
-    opacity: 1!important
+    transform: translateY(0)!important
     
 
 
 .btn-zakaz
-    transition: .5s
-    opacity: 0
+    transition: .5s!important
+    transform: translateY(1000%)
     margin-top: 50px
     width: 280px
     height: 70px
@@ -358,6 +366,32 @@ $width_dev: 300px
     text-align: center
     position: relative
     font-size: 2rem
+    border: 5px solid #fff
+    &:hover
+        .btn-zakaz-left, .btn-zakaz-right
+            background: #fff
+            height: 80%
+    .btn-zakaz-left
+        transition: .3s
+        display: block
+        width: 2px
+        position: absolute
+        left: -20px
+        top: 50%
+        transform: translateY(-50%)
+        height: 15px
+        background: #ddd
+    .btn-zakaz-right
+        transition: .3s
+        display: block
+        content: ""
+        width: 2px
+        position: absolute
+        left: calc( 100% + 20px  )
+        top: 50%
+        transform: translateY(-50%)
+        height: 15px
+        background: #ddd
 
 .content.projects-new
     width: 81.125% 
