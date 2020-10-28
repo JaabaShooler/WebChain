@@ -275,6 +275,24 @@ $width_dev: 300px
     min-height: 200px
     height: 200px
 
+.dev-letf, .dev-right
+    overflow: hidden
+    position: relative
+    .projects__dev, .text__dev
+        position: relative
+        transition: all .5s
+        top: auto  
+    .projects__dev
+        right: -100%
+    .text__dev
+        left: -100%
+
+
+.projects__dev--active
+    right: 1px !important
+
+.text__dev--active
+    left: 1px !important
 
 
 .develop-left
@@ -300,7 +318,6 @@ $width_dev: 300px
 
 .list-active
     left: 1px
-    
 
 .info-dev-active
     left: 0!important
@@ -368,6 +385,9 @@ $width_dev: 300px
     font-size: 2rem
     border: 5px solid #fff
     &:hover
+        &::before
+            left: -1px
+            width: calc( 100% + 2px )
         .btn-zakaz-left, .btn-zakaz-right
             background: #fff
             height: 80%

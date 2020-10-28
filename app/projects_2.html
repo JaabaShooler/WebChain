@@ -69,12 +69,24 @@
         <div class="project-head">
             <div id="particles-js">
                 <div class="project-part">
-                    <h1>PROJECTS</h1>
+                    <div class="dev-letf">
+                        <h1 class="projects__dev">PROJECTS</h1>
+                    </div>  
                     <span class="line-part"></span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto itaque vero beatae praesentium perspiciatis? Provident modi mollitia quas temporibus eos accusantium, culpa quisquam, facere laudantium hic voluptate, at quibusdam minus?</p>
+                    <div class="dev-right">
+                        <p class="text__dev">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto itaque vero beatae praesentium perspiciatis? Provident modi mollitia quas temporibus eos accusantium, culpa quisquam, facere laudantium hic voluptate, at quibusdam minus?</p>
+                    </div>
                 </div>
-               
             </div>
+            <script>
+            function setDevs() {
+                document.querySelector(".projects__dev").classList.add("projects__dev--active")
+                // document.querySelector(".dev-1").classList.add("devop-active")
+                document.querySelector(".text__dev").classList.add("text__dev--active")
+            }
+
+
+            </script>
         </div>
         <div class="project-content projects-new">
           
@@ -466,9 +478,14 @@
     <script src="js/jquery.waypoints.js"></script>
     <script>
     </script>
+
 </body>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(setDevs, 500)   
+    }, false);
+</script>
 
 </html>
 
-</html>
