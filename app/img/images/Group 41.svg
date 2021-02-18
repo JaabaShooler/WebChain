@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="319.646" height="160.248" viewBox="0 0 319.646 160.248">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e45555"/>
+      <stop offset="1" stop-color="#7d2f2f"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_41" data-name="Group 41" transform="translate(0)">
+    <path id="Path_13" data-name="Path 13" d="M2884.371-859.277h64.04L2989-899.863l40.585,40.585h174.436L3072.265-991.028,3007.236-926l49.1,49.1h-7.87l-72.9-72.9Z" transform="translate(-2884.371 991.028)" fill="url(#linear-gradient)"/>
+    <line id="Line_21" data-name="Line 21" x2="55.207" transform="translate(78.836 141.261)" fill="none" stroke="#792d2d" stroke-width="4"/>
+    <line id="Line_24" data-name="Line 24" x2="19.11" transform="translate(53.356 141.261)" fill="none" stroke="#792d2d" stroke-width="4"/>
+    <line id="Line_22" data-name="Line 22" x2="56.38" transform="translate(138.98 158.248)" fill="none" stroke="#792d2d" stroke-width="4"/>
+    <line id="Line_23" data-name="Line 23" x2="33.973" transform="translate(178.633 141.261)" fill="none" stroke="#792d2d" stroke-width="4"/>
+  </g>
+</svg>
